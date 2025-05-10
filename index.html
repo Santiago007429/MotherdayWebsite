@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Muttertag</title>
+    <link rel="icon" href="https://cdn.pixabay.com/photo/2014/04/02/10/47/red-304570_1280.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Noto+Sans">
+    <style>
+html {
+    background-color: rgb(247, 59, 59);
+    }
+.box {
+    position: absolute;
+    background-color: rgb(3, 156, 244);
+    width: 390px;
+    height: 170px;
+    border-radius: 15px;
+    box-shadow: 10px 5px 5px rgb(74, 161, 247);
+    border: 2px;
+    border-color: black;
+}
+.start_text {
+    position: relative;
+    text-align: center;
+    top: -20px;
+    font-size: 290%;
+    font-family: cursive;
+    color: black;
+    text-shadow: 2px 1px 1px rgb(3, 170, 170);
+}
+.box1 {
+    position: absolute;
+    width: 390px;
+    height: 400px;
+    background: rgb(3, 156, 244);
+    border-radius: 5px;
+    top: 265px;
+    left: 10px;
+    display: none;
+}
+
+.text {
+    position: absolute;
+    left: 3px;
+    font-family: oswald;
+    font-size: 125%; 
+}
+.button {
+    width: 150px;
+    height: 60px;
+    position: absolute;
+    top: 190px;
+    background-color: rgb(3, 156, 244);
+    font-size: 150%;
+    box-shadow: 2px 5px 3px rgb(74, 161, 247);
+}
+.decoration {
+    position: absolute;
+    top: 690px;
+    width: 394px;
+    height: 20px;
+    background-color: rgb(3, 156, 244);
+    box-shadow: 5px 2px 2px rgb(74, 161, 247);
+    border-radius: 10px;
+}
+.heart {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 720px;
+    left: 180px;
+}
+.text3 {
+    position: absolute;
+    top: 900px;
+}
+.flower {
+    top: 740px;
+    left: 20px;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+}
+    </style>
+</head>
+<body>
+    <div class="box" id="box">
+        <p class="start_text">Happy Muttertag <br> 2025</p>
+    </div>
+    <button onclick="buttonFunction()" class="button">Drück mich</button>
+    <div class="box1" id="box1">
+        <p class="text" id="text">
+            Nach vielen Jahren warst du immer bei meiner Seite.<br>Du hast aus mir den Menschen gemacht, der ich jetzt bin.
+            <br>Du bist immer bereit mir zu helfen und das schätze ich sehr. <br>
+            Was braucht ein Mensch mehr als eine Lebensbegleiterin der die Probleme des anderen versteht und sich dafür einsetzt als wären es seine eigende Probleme.
+            <br>Richtig! Nichts, DANKE Mama für 15 Jahre Heldentat. <br><br>- Dein Elias
+        </p>
+    </div>
+    <div class="decoration"></div>
+    <img src="https://cdn.pixabay.com/photo/2014/04/02/10/47/red-304570_1280.png" alt="heart" class="heart">
+    <img src="https://cdn.pixabay.com/photo/2016/03/25/19/37/crocus-1279508_1280.png" alt="flower" class="flower">
+    <p class="text3"></p>
+    <script defer>
+        function buttonFunction() {
+            var x = document.getElementById("box1");
+            if (x.style.display === "none") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
